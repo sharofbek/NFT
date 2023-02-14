@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  background-color: #1C233D;
+}
+
+.block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  text-align: center;
+}
+.block p {
+  color: rgb(95, 38, 119);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.block h1 {
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+.block .card-group {
+  display: flex;
+  gap: 20px;
+}
+.block .card {
+  width: 330px;
+  background-color: rgba(90, 92, 100, 0.368627451);
+  border-radius: 5px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.block .card img {
+  padding-top: 10px;
+}
+.block .card h5 {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 15px 0;
+}
+.block .card p {
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+}
+.block .btn {
+  width: 120px;
+  height: 40px;
+  background: linear-gradient(90deg, #BF68E2, #4E4E73);
+  border-radius: 5px;
+  border: none;
+  margin: 50px 0;
+}
+.block .buttons {
+  display: flex;
+  gap: 20px;
+}
+.block .btn-2 {
+  width: 120px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid white;
+  margin: 50px 0;
+}
+
+.creators-group {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  flex-wrap: wrap;
+  margin: 0 120px;
+}
+.creators-group .creator {
+  display: flex;
+  width: 350px;
+  height: 80px;
+  background-color: rgba(90, 92, 100, 0.368627451);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding-right: 10px;
+  transition: 0.4s;
+}
+.creators-group .creator:hover {
+  box-shadow: 0 0 3px 1px lightgrey;
+}
+.creators-group .creator .img {
+  display: flex;
+  gap: 10px;
+}
+.creators-group .creator .img img {
+  padding: 7px;
+}
+.creators-group .creator .img div {
+  font-size: 12px;
+  padding-top: 20px;
+  color: white;
+  font-weight: 100;
+  text-align: start;
+}
+.creators-group .creator .img h5 {
+  font-size: 14px;
+  padding-top: 7px;
+}
+.creators-group .creator .li {
+  display: flex;
+  padding-top: 6px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 270px;
+  background-color: rgba(25, 39, 90, 0.6117647059);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.box button {
+  width: 170px;
+  height: 35px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #BF68E2, #4E4E73);
+  border: none;
+}
+.box p {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.end {
+  display: flex;
+  width: 90%;
+}
+.end .subscribe {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: start;
+}
+.end .subscribe h2 {
+  font-size: 28px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.end .subscribe p {
+  font-size: 18px;
+  width: 70%;
+  color: white;
+  font-weight: 100;
+}
+.end .subscribe .logos {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.end .subscribe .logos img {
+  width: 36px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #4E4E73;
+  padding: 7px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.end .subscribe span {
+  font-size: 14px;
+  color: rgb(87, 85, 85);
+  margin-bottom: 30px;
+}
+.end .links {
+  width: 50%;
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+}
+.end .links p {
+  color: white;
+  font-weight: 100;
+  margin-top: 10px;
+}
+.end .links .div {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .block {
+    height: auto;
+  }
+  h1 {
+    width: 100%;
+    font-size: 27px !important;
+    text-align: center;
+  }
+  .card-group {
+    flex-direction: column;
+  }
+  .creators-group {
+    flex-direction: column;
+  }
+  .box {
+    width: 90%;
+  }
+  .box p {
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+  }
+  .end {
+    flex-direction: column;
+  }
+  .end .subscribe {
+    width: 100%;
+    text-align: center;
+  }
+  .end .subscribe h2 {
+    margin: 10px auto;
+  }
+  .end .subscribe p {
+    font-size: 15px;
+    width: 100%;
+    margin: 15px auto;
+  }
+  .end .subscribe span {
+    margin: 15px auto;
+  }
+  .end .subscribe .logos {
+    margin: auto;
+  }
+  .end .links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .end .links .div {
+    display: none;
+  }
+}/*# sourceMappingURL=more.css.map */
